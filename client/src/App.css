@@ -1,0 +1,67 @@
+/* 🌸 Global Styles */
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(to bottom, #ffe6f0, #fffafd);
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* ☁️ Animated Clouds */
+.cloud {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: floatClouds 60s linear infinite;
+  z-index: 0;
+}
+
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.cloud::before {
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 30px;
+}
+
+.cloud::after {
+  width: 120px;
+  height: 120px;
+  top: -40px;
+  left: -30px;
+}
+
+@keyframes floatClouds {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
+}
+
+/* ✨ Fade-in Page Load Animation */
+.fade-in {
+  animation: fadeIn 1s ease-out both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,114 @@
+.projects-page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.projects-container {
+    position: relative;
+    background: linear-gradient(to bottom, #FEFAEF, #ffe7a5);
+    max-width: 900px;
+    margin: auto;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+}
+
+.projects-header {
+    position: absolute;
+    top: -45px;
+    /* height: 15px; */
+    width: 150px;
+    left: 0;
+    background: #FEFAEF;
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+    /* ✅ CENTER CONTENT */
+    /* TODO: fix this!!!! */
+    display: flex;
+    align-items: center;    /* vertical center */
+    justify-content: left; /* horizontal center */
+    gap: 1rem;
+    z-index: 10;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: 'Gamja Flower';
+  align-content: center;
+  color: #d94c86;
+  margin-bottom: 1rem;
+}
+
+.project-card1 {
+  background: #fcf8eb;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* //TODO: make this img smaller */
+.visaImg {
+  max-width: 60px;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.project-card2 {
+  background: #D9F8FF;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project2-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.project-card3 {
+  background: #f4e1ff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.project-img{
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+p1, p2, p3 {
+  font-size: 0.8;
+  font-family: "Nunito";
+}
+
+.footer-note{
+  font-size: 0.75rem;
+  font-family: 'Gamja Flower';
+  align-content: center;
+  color: #d94c86;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .project2-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .VIPSImg {
+    width: 100%;
+    max-width: 300px;
+  }
+}

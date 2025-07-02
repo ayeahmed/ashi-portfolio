@@ -1,0 +1,58 @@
+/* Experience.css */
+.experience-page {
+  padding: 2rem;
+  background: #ffe0f0;
+  min-height: 100vh;
+}
+
+.experience-container {
+  position: relative;
+  background: linear-gradient(to bottom, #FEFAEF, #ffe7a5);
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem 1.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+}
+
+.experience-header {
+    position: absolute;
+    top: -45px;
+    /* height: 15px; */
+    width: 150px;
+    left: 0;
+    background: #FEFAEF;
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+    /* ✅ CENTER CONTENT */
+    /* TODO: fix this!!!! */
+    display: flex;
+    align-items: center;    /* vertical center */
+    justify-content: left; /* horizontal center */
+    gap: 1rem;
+    z-index: 10;
+}
+
+.experience-content1 {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap; /* allows stacking on smaller screens */
+  margin-bottom: 3rem;
+}
+
+.experience-text1 {
+  max-width: 500px;
+  flex: 1;
+}
+
+
+.experience-img {
+  max-width: 300px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-start;
+}
