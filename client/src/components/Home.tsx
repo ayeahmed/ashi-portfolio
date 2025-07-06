@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Home.css';
 import { FaHome, FaEnvelope, FaLinkedin } from 'react-icons/fa';
-import profileImg from '../assets/imgs/home-pic.jpg'; // replace with your actual image
 import { Link, useNavigationType } from 'react-router-dom';
 import Welcome from './Welcome';
 
@@ -25,7 +24,7 @@ const Home: React.FC = () => {
             <a href= "mailto:ayeshaahmed2145@gmail.com"><FaEnvelope size={28} color="d94c86"/></a>
             <a href="https://linkedin.com/in/ayesha-a-ahmed" target="_blank"><FaLinkedin size={28} color="d94c86"/></a>
           </div>
-          <img src={profileImg} alt="Ayesha" className="profile-img" />
+          <img src={"home-pic.jpg"} alt="Ayesha" className="profile-img" />
           <h1>hi, i’m ayesha!</h1>
           {/* // TODO: make this mobile friendly*/}
           <p>
