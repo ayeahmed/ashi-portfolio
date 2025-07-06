@@ -48,7 +48,7 @@ const Projects = () => {
             </p>
           </div>
         </section>
-        <p4 className="footer-note">💬 ask me about more projects from my courses too!</p4>
+        <p className="footer-note">💬 ask me about more projects from my courses too!</p>
       </div>
     </div>
   );

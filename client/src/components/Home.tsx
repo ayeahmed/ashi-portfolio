@@ -1,4 +1,4 @@
-import React, {useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Home.css';
 import { FaHome, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 import profileImg from '../assets/imgs/home-pic.jpg'; // replace with your actual image
