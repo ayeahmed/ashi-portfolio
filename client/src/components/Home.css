@@ -4,7 +4,7 @@
     display : flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem
+    padding: 2rem;
 }
 
 .home-container {
@@ -22,7 +22,7 @@
     position: absolute;
     top: -45px;
     height: 15px;
-    width: 150px;
+    width: 200px;
     left: 0;
     background: #FFEFF6;
     padding: 1rem 2rem;
@@ -69,13 +69,6 @@ p {
   color: #000000;
 }
 
-p1 {
-  font-size: 1.5rem;
-  line-height: 1.6;
-  font-family: 'Gamja Flower', cursive;
-  color: #d94c86;
-}
-
 .cloud-links {
   margin-top: 2rem;
   display: flex;
@@ -95,4 +88,20 @@ p1 {
 .cloud-links a:hover {
   color: #e04a8b;
   border-bottom-style: solid;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #931c4d;
+  border-bottom: 2px dashed #ffc4d6;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #e04a8b;
+  border-bottom-style: solid;
+}
+
+.footer-txt{
+  color: #000000
 }

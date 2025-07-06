@@ -1,0 +1,80 @@
+/* Extras.css */
+
+/* 1) Page wrapper */
+.extras-page {
+  padding: 2rem;
+  background: #fff8eb;           /* pale yellow background */
+  min-height: 100vh;
+}
+
+/* 2) Main heading */
+.extras-page h1 {
+  font-family: 'Gamja Flower', cursive;
+  color: #d94c86;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* 3) Intro paragraph */
+.extras-page > p {
+  font-family: 'Nunito', sans-serif;
+  color: #000;
+  text-align: center;
+  margin: 0 0 2rem;
+  line-height: 1.6;
+}
+
+/* 4) The big “interests” block */
+.interests {
+  background: linear-gradient(to bottom, #FFEFF6, #F8A6CC);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #000;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* 5) Give some breathing room around each line break */
+.interests br {
+  content: '';
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* 6) Spotify link styling */
+.spotify-link {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  color: #d94c86;
+  border-bottom: 1px dashed #d94c86;
+  text-decoration: none;
+  transition: color 0.2s ease, border-bottom-style 0.2s;
+}
+
+.spotify-link:hover {
+  color: #b92c6a;
+  border-bottom-style: solid;
+}
+
+.footer-tab {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-tab a,
+.footer-tab a:visited {
+  color: #d94c86;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-tab a:hover {
+  transform: scale(1.1);
+  color: #b92c6a;
+}

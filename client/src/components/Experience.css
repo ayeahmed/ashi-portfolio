@@ -3,6 +3,7 @@
   padding: 2rem;
   background: #ffe0f0;
   min-height: 100vh;
+  margin-top: 2rem;
 }
 
 .experience-container {
@@ -10,6 +11,7 @@
   background: linear-gradient(to bottom, #FEFAEF, #ffe7a5);
   max-width: 900px;
   margin: auto;
+  margin-bottom: 1rem;
   padding: 1.5rem 1.5rem;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
   text-align: center;
@@ -19,40 +21,81 @@
 .experience-header {
     position: absolute;
     top: -45px;
-    /* height: 15px; */
-    width: 150px;
+    width: 200px;
     left: 0;
     background: #FEFAEF;
     padding: 1rem 2rem;
     clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
-    /* ✅ CENTER CONTENT */
-    /* TODO: fix this!!!! */
     display: flex;
-    align-items: center;    /* vertical center */
-    justify-content: left; /* horizontal center */
+    align-items: center; 
+    justify-content: left; 
     gap: 1rem;
     z-index: 10;
 }
 
-.experience-content1 {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap; /* allows stacking on smaller screens */
-  margin-bottom: 3rem;
+.page-header {
+  font-family: 'Gamja Flower', cursive;
+  font-size: 2.5rem;
+  color: #d94c86;
+  margin: 1rem 0 2rem;
 }
 
-.experience-text1 {
-  max-width: 500px;
+.experience-content1 {
+  display: flex;
+  flex-direction: column;  
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.project-header {
+  font-family: 'Nunito';
+  font-size: 1.5rem;
+  color: #000000;
+  margin: 1rem 0 2rem;  
+}
+
+.experience-text1, .experience-text2 {
   flex: 1;
 }
 
+.img-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 700px;   /* match your text width */
+}
 
-.experience-img {
+/* 2) First two images: one column each */
+.reu-vertical {
+  width: 100%;
   max-width: 300px;
-  width: 90%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: flex-start;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* 3) Selfie spans both columns */
+.reu-selfie {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  justify-self: center;
+}
+
+@media (max-width: 768px) {
+  .img-group {
+    grid-template-columns: 1fr;
+  }
+  .reu-vertical,
+  .reu-selfie {
+    max-width: 75%;
+  }
 }
