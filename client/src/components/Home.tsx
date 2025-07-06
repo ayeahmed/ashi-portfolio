@@ -31,8 +31,8 @@ const Home: React.FC = () => {
             my name is ayesha (eye-shuh) and i am a senior studying computer engineering
             at the university of michigan. i also have a minor in mathematics. i have research
             experience in machine learning and AI, and a publication in process. i am currently
-            working a fullstack team at pnc! i am also interested in web
-            development and UX/UI design, which i have started learning more about :&#41;
+            working as a software engineering intern at pnc, where I am doing frontend and backend development!
+            i am interested in web development and UX/UI design, which i have started learning more about :&#41;
           </p>
           <div className="cloud-links">
             <a href="/projects">projects ૮ ˶ᵔ ᵕ ᵔ˶ ა</a>
