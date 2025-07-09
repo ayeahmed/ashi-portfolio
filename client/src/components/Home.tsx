@@ -37,7 +37,7 @@ const Home: React.FC = () => {
           <div className="cloud-links">
             <a href="/projects">projects ૮ ˶ᵔ ᵕ ᵔ˶ ა</a>
             <a href="/experience">experience ₊˚⊹= ★</a>
-            <a href="mailto:your@email.com">contact me~~</a>
+            <a href="mailto:ayeshaahmed2145@gmail.com">contact me~~</a>
           </div>
           <p className="footer-note">
             <Link to="/extras-about-me" className='footer-link'>⋆⁺｡˚⋆˙‧₊☽ click to learn more random stuff about me ☾₊‧˙⋆˚｡⁺⋆</Link>
