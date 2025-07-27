@@ -1,13 +1,13 @@
 # Ayesha's Portfolio
 
-## 📌 Overview
+## 🍥 Overview
 
 A clean, responsive personal portfolio website built with React, Tailwing CSS, and Vite. It intends to showcase my projects and work experience, while providing a little bit of an introduction to who I am!
 This is the first site I have made fully from scratch and I continuously return to make edits and improvements.
 
 ---
 
-## ✨ Features
+## 💫 Features
 
 - 💼 Project showcase section with live links
 - 🧑‍💻 Tech stack and skills overview
@@ -17,7 +17,7 @@ This is the first site I have made fully from scratch and I continuously return 
 
 ---
 
-## 🔧 Tech Stack
+## 💒 Tech Stack
 
 | Frontend | Styling       | Deployment           |
 |----------|---------------|----------------------|
