@@ -1,9 +1,8 @@
 /* Extras.css */
 
-/* 1) Page wrapper */
 .extras-page {
-  padding: 2rem;
-  background: #fff8eb;           /* pale yellow background */
+  padding: 4.5rem 2rem 2rem;  /* more top padding */
+  background: #fff8eb;
   min-height: 100vh;
 }
 
@@ -24,23 +23,44 @@
   line-height: 1.6;
 }
 
+.interests-wrapper {
+  position: relative;
+  width: 90%;               /* allow some fluidity */
+  max-width: 900px;         /* wider card */
+  margin: 0 auto 2rem;
+  background: linear-gradient(to bottom, #FFEFF6, #F8A6CC);
+  padding: 2rem 3rem;       /* extra padding so text never hugs the buddy */
+  border-radius: 1rem;
+  overflow: hidden;         /* hide any overflow from swing */
+}
+
 /* 4) The big “interests” block */
 .interests {
-  background: linear-gradient(to bottom, #FFEFF6, #F8A6CC);
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  max-width: 800px;
-  margin: 0 auto 2rem;
   color: #000;
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  text-align: center;
+  text-align: center; /* TODO: consider center aligning */
+}
+
+/* Riot gun buddy */
+.riot {
+  position: absolute;
+  top: 2px;     /* Move above the card */
+  right: -15px;   /* Move outside to the right a bit */
+  width: 70px;
+  transform-origin: top center;
+  animation: swing 2s ease-in-out infinite alternate;
+  z-index: 10;
+}
+
+@keyframes swing {
+  from   { transform: rotate(  5deg); }
+  to     { transform: rotate( -5deg); }
 }
 
 /* 5) Give some breathing room around each line break */
 .interests br {
-  content: '';
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -77,4 +97,22 @@
 .footer-tab a:hover {
   transform: scale(1.1);
   color: #b92c6a;
+}
+
+
+@media (max-width: 600px) {
+  .interests-wrapper {
+    padding: 1.5rem 1rem;
+    width: 95%;
+  }
+  .riot {
+    position: static;
+    display: block;
+    margin: 0 auto 1rem;
+    animation: none;
+    transform: none;
+  }
+  .interests {
+    text-align: center;
+  }
 }
